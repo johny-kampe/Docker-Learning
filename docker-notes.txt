@@ -1,0 +1,25 @@
+Section 1
+Source code = https://github.com/bstashchuk/docker
+
+
+Section 2
+Docker installation, https://docs.docker.com/desktop/install/windows-install/
+
+
+Section 3 
+docker run hello-world
+docker ps
+docker run ubuntu
+docker ps -a
+docker images
+docker run -it ubuntu -> we are in the ubuntu bash shell
+Docker container stops where there are no processes running inside the container. It automatically stops
+docker run -it busybox
+
+
+Section 4
+docker pull nginx
+docker kill
+docker stop
+docker run -p 8080:80 nginx
+docker run -p 8081:80 -v <absolute-local-path-of-my-computer>:/usr/share/nginx/html nginx docker run -p 8081:80 -v $PWD:/usr/share/nginx/html nginx 
